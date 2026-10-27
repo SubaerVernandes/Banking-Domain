@@ -2,7 +2,13 @@
 
 ![Summary Dashboard](All_Dashboard/Summary.png)
 
+![Summary Dashboard](All_Dashboard/Loan_Analysis.png)
+
+![Summary Dashboard](All_Dashboard/Deposit_Analysis.png)
+
 ![Summary Dashboard](All_Dashboard/Home.png)
+
+![Summary Dashboard](All_Dashboard/Drill_Through.png)
 
 ## Project Overview
 
