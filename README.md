@@ -3,7 +3,7 @@ Banking Domain Analyst | Menganalisis data perbankan untuk menemukan wawasan bis
 
 # Banking Domain Data Analysis
 
-## Gambaran Umum Proyek
+## Project Overview
 
 Proyek ini merupakan pengembangan dashboard interaktif berbasis data perbankan yang dirancang untuk menganalisis berbagai indikator utama, meliputi portofolio pinjaman, simpanan nasabah, biaya layanan, serta tingkat keterlibatan nasabah. Dashboard ini menyajikan informasi kinerja perbankan secara terintegrasi sehingga pengguna dapat mengeksplorasi data keuangan melalui filter interaktif, visualisasi, dan rincian data nasabah.
 
