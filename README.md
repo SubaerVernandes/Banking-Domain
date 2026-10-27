@@ -1,4 +1,5 @@
 # Banking Domain Data Analysis
+![Summary Dashboard](All_Dashboard/summary.png)
 
 ## Project Overview
 
