@@ -1,5 +1,6 @@
 # Banking Domain Data Analysis
-![Summary Dashboard](All_Dashboard/summary.png)
+
+![Summary Dashboard](All_Dashboard/Summary.png)
 
 ## Project Overview
 
