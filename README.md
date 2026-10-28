@@ -16,82 +16,63 @@
 
 Proyek ini bertujuan untuk menganalisis data perbankan menggunakan **Microsoft Power BI** guna memahami karakteristik nasabah, kinerja portofolio pinjaman, simpanan, biaya perbankan, serta tingkat keterlibatan nasabah.
 
-Melalui proses **Data Cleaning, Data Transformation, Data Modeling, DAX Measures**, dan **Data Visualization**, proyek ini menghasilkan dashboard interaktif yang membantu pengguna memahami kondisi bisnis perbankan berdasarkan berbagai indikator dan segmentasi nasabah.
+Melalui proses **Data Cleaning, Data Transformation, Data Modeling, DAX Measures**, dan **Data Visualization**, proyek ini menghasilkan dashboard interaktif yang mendukung **Business Intelligence**, **Exploratory Data Analysis (EDA)**, dan pengambilan keputusan berbasis data.
 
-Dashboard dirancang untuk mendukung proses **Business Intelligence**, **Exploratory Data Analysis (EDA)**, dan pengambilan keputusan berbasis data.
+Dashboard memungkinkan pengguna mengeksplorasi indikator perbankan dari tingkat ringkasan hingga tingkat nasabah berdasarkan dimensi yang tersedia dalam data.
 
 ## Business Problem
 
-Institusi perbankan perlu memahami hubungan antara karakteristik nasabah, aktivitas perbankan, portofolio pinjaman, simpanan, dan biaya layanan.
+Institusi perbankan perlu memahami hubungan antara karakteristik nasabah, aktivitas perbankan, portofolio pinjaman, simpanan, dan biaya layanan. Tanpa penyajian data yang terstruktur, informasi tersebut dapat sulit dibandingkan dan dievaluasi secara konsisten.
 
-Tanpa analisis yang terstruktur, informasi tersebut dapat sulit dipahami secara menyeluruh. Oleh karena itu, diperlukan dashboard yang mampu menyajikan indikator utama secara terintegrasi dan memungkinkan pengguna melakukan analisis berdasarkan kategori nasabah.
-
-Permasalahan bisnis yang menjadi fokus proyek ini meliputi:
-
-- Memahami gambaran umum kinerja perbankan melalui berbagai Key Performance Indicators (KPIs).
-- Menganalisis distribusi portofolio pinjaman dan simpanan.
-- Mengidentifikasi perbedaan nilai pinjaman dan simpanan berdasarkan karakteristik nasabah.
-- Menganalisis keterlibatan nasabah berdasarkan Engagement Timeframe dan Engagement Length.
-- Memahami distribusi biaya perbankan berdasarkan Loyalty Classification dan Nationality.
-- Menyediakan dashboard interaktif untuk mendukung eksplorasi data dan pengambilan keputusan.
+Proyek ini menggunakan Power BI untuk mengintegrasikan indikator utama ke dalam laporan interaktif. Dengan pendekatan tersebut, pengguna dapat meninjau kinerja perbankan, membandingkan segmen nasabah, serta menentukan area yang membutuhkan analisis lebih lanjut.
 
 ## Project Objectives
 
 Tujuan utama proyek ini adalah:
 
-1. Mengolah dan menyiapkan data perbankan agar dapat digunakan untuk analisis.
-2. Mengembangkan data model dan perhitungan menggunakan DAX.
-3. Membuat dashboard interaktif menggunakan Microsoft Power BI.
-4. Menganalisis portofolio pinjaman, simpanan, dan biaya perbankan.
-5. Mengeksplorasi pola berdasarkan Income Band, Nationality, Banking Relationship, dan kategori keterlibatan nasabah.
-6. Menyusun business insights dan rekomendasi berdasarkan hasil analisis yang tersedia.
-7. Menunjukkan kemampuan teknis dan analitis yang relevan untuk peran Data Analyst.
+1. Menyiapkan data perbankan agar dapat digunakan untuk analisis.
+2. Mengembangkan Data Model dan perhitungan menggunakan DAX.
+3. Menyajikan Key Performance Indicators (KPIs) melalui dashboard interaktif.
+4. Mengeksplorasi distribusi portofolio pinjaman, simpanan, dan biaya perbankan.
+5. Membandingkan metrik berdasarkan Income Band, Nationality, Banking Relationship, dan Engagement Timeframe.
+6. Mendukung analisis lebih terperinci melalui fitur Drill Through.
+7. Menyusun interpretasi dan rekomendasi bisnis berdasarkan hasil analisis yang telah diverifikasi.
 
 ## Tools & Technologies
 
-- **Microsoft Power BI** — Dashboard Development dan Data Visualization.
+- **Microsoft Power BI** — Dashboard Development dan Interactive Reporting.
 - **Power Query** — Data Cleaning dan Data Transformation.
-- **DAX (Data Analysis Expressions)** — Calculated Measures dan Business Calculations.
-- **Data Modeling** — Pengorganisasian hubungan dan struktur data untuk analisis.
-- **Exploratory Data Analysis (EDA)** — Eksplorasi pola dan distribusi data.
-- **Business Intelligence (BI)** — Penyajian informasi untuk mendukung keputusan bisnis.
+- **DAX (Data Analysis Expressions)** — Calculated Columns, Measures, dan Business Calculations.
+- **Data Modeling** — Pengelolaan hubungan antartabel.
+- **Exploratory Data Analysis (EDA)** — Eksplorasi distribusi dan pola data.
 - **Data Visualization** — Penyajian metrik melalui visual interaktif.
+- **Business Intelligence (BI)** — Penyampaian informasi analitis untuk mendukung evaluasi bisnis.
 
 ## Dataset Overview
 
-Dataset yang digunakan mencakup informasi terkait nasabah dan aktivitas perbankan.
+Dataset yang digunakan mencakup informasi nasabah, hubungan perbankan, dan metrik keuangan. Dokumentasi proyek mengidentifikasi tabel-tabel berikut:
 
-Tabel yang digunakan dalam proyek ini meliputi:
-
-- **Banking Relationship** — Informasi terkait hubungan nasabah dengan layanan perbankan.
-- **Client-Banking** — Informasi nasabah dan metrik keuangan yang digunakan dalam analisis.
+- **Banking Relationship** — Kategori hubungan nasabah dengan layanan perbankan.
+- **Client-Banking** — Data nasabah dan metrik keuangan yang digunakan dalam analisis.
 - **Gender** — Kategori gender nasabah.
 - **Investment Advisor** — Informasi terkait Investment Advisor.
-- **Period** — Informasi periode yang digunakan dalam data model.
+- **Period** — Informasi periode yang tersedia dalam Data Model.
 
-Struktur tabel tersebut digunakan untuk mendukung analisis berdasarkan kategori nasabah, karakteristik keuangan, dan indikator kinerja perbankan.
+Tabel-tabel tersebut digunakan untuk mendukung analisis berdasarkan karakteristik nasabah, kategori hubungan perbankan, dan indikator keuangan.
+
+*Catatan: Sumber yang tersedia belum mencantumkan URL dataset publik, lisensi data, dan data dictionary lengkap.*
 
 ## Data Cleaning & Transformation
 
-Tahap Data Preparation dilakukan untuk menyiapkan data sebelum digunakan dalam dashboard.
-
-Proses yang tercakup dalam proyek ini meliputi:
-
-- Memeriksa struktur dan tipe data.
-- Menyiapkan kolom yang dibutuhkan untuk analisis.
-- Membuat kategori berdasarkan nilai numerik.
-- Menyiapkan atribut terkait keterlibatan nasabah.
-- Mengembangkan perhitungan yang dibutuhkan untuk analisis perbankan.
+Tahap Data Preparation mencakup peninjauan struktur data dan penyiapan atribut yang dibutuhkan untuk analisis.
 
 ### 1. Engagement Timeframe
 
-Kategori Engagement Timeframe digunakan untuk mengelompokkan nasabah berdasarkan durasi keterlibatan mereka dengan bank.
-
-Pengelompokan ini membantu analisis terkait perbedaan nilai pinjaman dan simpanan pada setiap kategori keterlibatan.
+`Engagement Timeframe` digunakan untuk mengelompokkan nasabah berdasarkan kategori durasi keterlibatan dengan bank. Kolom ini mendukung perbandingan metrik keuangan antarkategori.
 
 ### 2. Engagement Days
 
-Kolom Engagement Days digunakan untuk menghitung durasi keterlibatan nasabah berdasarkan tanggal bergabung dengan bank dan tanggal saat analisis dilakukan.
+`Engagement Days` menghitung jumlah hari sejak nasabah bergabung dengan bank hingga tanggal saat analisis dilakukan.
 
 ```DAX
 Engagement Days =
@@ -102,110 +83,170 @@ DATEDIFF(
 )
 ```
 
+Nama kolom pada implementasi aktual perlu disesuaikan dengan nama yang digunakan di Power BI.
+
 ### 3. Income Band
 
-Income Band digunakan untuk mengelompokkan nasabah berdasarkan pendapatan.
+`Income Band` mengelompokkan nasabah berdasarkan pendapatan sehingga metrik keuangan dapat dibandingkan antarkategori.
 
-Kategori yang digunakan dalam proyek ini:
-
-- **Low Income** — Income kurang dari 100000.
-- **Mid Income** — Income kurang dari 300000 sesuai batas kategori yang digunakan dalam implementasi proyek.
-
-Income Band digunakan untuk mendukung analisis perbedaan nilai pinjaman dan simpanan berdasarkan kategori pendapatan.
+Dokumentasi proyek menyebutkan batas pendapatan di bawah 100.000 untuk kategori Low dan di bawah 300.000 untuk kategori Mid. Batas lengkap, label kategori, dan penanganan nilai lainnya perlu dikonfirmasi terhadap implementasi aktual.
 
 ### 4. Processing Fees
 
-Processing Fees digunakan untuk menghitung biaya pemrosesan berdasarkan aturan yang diterapkan dalam proyek.
+`Processing Fees` digunakan sebagai tarif dalam perhitungan biaya pemrosesan. Dokumentasi menyebutkan tarif `0.05` untuk kategori `High Processing Fees`.
 
-Kategori **High Processing Fees** menggunakan tarif sebesar 0.05 sesuai implementasi perhitungan proyek.
+Aturan untuk kategori lainnya perlu diverifikasi agar perhitungan `Total Fees` merepresentasikan definisi bisnis yang tepat.
 
 ## DAX Measures & Calculations
 
-DAX digunakan untuk membuat perhitungan dan Key Performance Indicators (KPIs) yang ditampilkan dalam dashboard.
+DAX digunakan untuk menghasilkan metrik agregat dan KPI yang mendukung analisis perbankan.
 
-Metrik yang digunakan meliputi:
+| Metric | Description |
+|---|---|
+| `Total Clients` | Jumlah nasabah unik. |
+| `Bank Loan` | Nilai pinjaman perbankan. |
+| `Business Lending` | Nilai pinjaman untuk kebutuhan bisnis. |
+| `Credit Cards Balance` | Nilai saldo kartu kredit berdasarkan definisi model. |
+| `Total Loan` | Gabungan Bank Loan, Business Lending, dan Credit Cards Balance. |
+| `Bank Deposit` | Nilai simpanan perbankan. |
+| `Savings Account` | Nilai simpanan pada rekening tabungan. |
+| `Checking Accounts` | Nilai pada rekening transaksi. |
+| `Foreign Currency Account` | Nilai pada rekening mata uang asing. |
+| `Total Deposit` | Gabungan kategori simpanan sesuai perhitungan proyek. |
+| `Total Fees` | Biaya yang dihitung menggunakan Total Loan dan Processing Fees. |
+| `Total CC Amount` | Metrik jumlah kartu kredit sesuai definisi dashboard. |
+| `Engagement Length` | Metrik durasi keterlibatan nasabah berdasarkan kolom engagement yang digunakan. |
 
-- **Total Clients** — Jumlah nasabah.
-- **Bank Deposit** — Nilai simpanan perbankan.
-- **Bank Loan** — Nilai pinjaman perbankan.
-- **Business Lending** — Nilai pinjaman untuk kebutuhan bisnis.
-- **Credit Cards Balance** — Nilai saldo kartu kredit.
-- **Total Loan** — Total nilai pinjaman berdasarkan perhitungan proyek.
-- **Total Deposit** — Total nilai simpanan berdasarkan perhitungan proyek.
-- **Total Fees** — Total biaya perbankan.
-- **Checking Accounts** — Nilai atau metrik terkait Checking Accounts.
-- **Savings Account** — Nilai atau metrik terkait Savings Account.
-- **Foreign Currency Account** — Nilai atau metrik terkait Foreign Currency Account.
-- **Total CC Amount** — Total nilai yang berkaitan dengan kartu kredit sesuai definisi dalam dashboard.
-- **Engagement Length** — Durasi keterlibatan nasabah.
+### Representative DAX Measures
 
-Fungsi DAX yang digunakan atau relevan dengan perhitungan proyek meliputi:
+**Total Clients**
 
-- `SUM()`
-- `DISTINCTCOUNT()`
-- `SUMX()`
-- `SWITCH()`
-- `DATEDIFF()`
+```DAX
+Total Clients =
+DISTINCTCOUNT('Clients - Banking'[Client ID])
+```
 
-Perhitungan tersebut digunakan untuk mendukung agregasi data, penghitungan jumlah nasabah, segmentasi, dan penyajian KPI pada dashboard.
+**Bank Loan**
+
+```DAX
+Bank Loan =
+SUM('Clients - Banking'[Bank Loans])
+```
+
+**Business Lending**
+
+```DAX
+Business Lending =
+SUM('Clients - Banking'[Business Lending])
+```
+
+**Total Loan**
+
+```DAX
+Total Loan =
+[Bank Loan] + [Business Lending] + [Credit Cards Balance]
+```
+
+**Bank Deposit**
+
+```DAX
+Bank Deposit =
+SUM('Clients - Banking'[Bank Deposits])
+```
+
+**Total Deposit**
+
+```DAX
+Total Deposit =
+[Bank Deposit]
+    + [Savings Account]
+    + [Foreign Currency Account]
+    + [Checking Accounts]
+```
+
+**Total Fees**
+
+```DAX
+Total Fees =
+SUMX(
+    'Clients - Banking',
+    [Total Loan] * 'Clients - Banking'[Processing Fees]
+)
+```
+
+**Savings Account**
+
+```DAX
+Savings Account =
+SUM('Clients - Banking'[Saving Accounts])
+```
+
+**Checking Accounts**
+
+```DAX
+Checking Accounts =
+SUM('Clients - Banking'[Checking Accounts])
+```
+
+**Foreign Currency Account**
+
+```DAX
+Foreign Currency Account =
+SUM('Clients - Banking'[Foreign Currency Account])
+```
+
+**Credit Cards Balance**
+
+```DAX
+Credit Cards Balance =
+SUM('Clients - Banking'[Credit Card Balance])
+```
+
+**Total CC Amount**
+
+```DAX
+Total CC Amount =
+SUM('Clients - Banking'[Amount of Credit Cards])
+```
+
+**Engagement Length**
+
+```DAX
+Engagment Length =
+SUM('Clients - Banking'[Engagment Days])
+```
+
+Fungsi DAX yang digunakan atau relevan dengan dokumentasi perhitungan proyek meliputi `SUM()`, `DISTINCTCOUNT()`, `SUMX()`, `SWITCH()`, dan `DATEDIFF()`.
+
+*Catatan validasi: Nama kolom terkait kartu kredit dan engagement berbeda pada beberapa bagian dokumentasi. Pastikan nama field, definisi metrik, serta formula DAX sesuai dengan implementasi aktual di file PBIX sebelum memublikasikan hasil.*
 
 ## Dashboard Overview
 
-Dashboard terdiri dari lima halaman utama yang mendukung analisis dari tingkat ringkasan hingga tingkat nasabah.
+Dashboard terdiri dari lima halaman yang mendukung eksplorasi data dari ringkasan hingga detail nasabah.
 
 ### 1. Home
 
-Halaman Home memberikan gambaran umum mengenai indikator utama perbankan.
-
-Halaman ini digunakan sebagai titik awal untuk memahami metrik utama dan menavigasi analisis pada halaman lainnya.
+Menampilkan gambaran umum KPI dan indikator perbankan sebagai titik awal untuk memahami data dan menavigasi halaman analisis lainnya.
 
 ### 2. Loan Analysis
 
-Halaman Loan Analysis berfokus pada analisis portofolio pinjaman.
-
-Analisis mencakup metrik dan segmentasi yang berkaitan dengan:
-
-- Bank Loan
-- Business Lending
-- Credit Cards Balance
-- Banking Relationship
-- Nationality
-- Income Band
-- Engagement Timeframe
-
-Halaman ini membantu pengguna mengeksplorasi distribusi nilai pinjaman berdasarkan kategori nasabah yang tersedia pada dashboard.
+Berfokus pada portofolio pinjaman melalui metrik Bank Loan, Business Lending, dan Credit Cards Balance. Halaman ini juga mendukung eksplorasi berdasarkan dimensi seperti Banking Relationship, Nationality, Income Band, dan Engagement Timeframe sesuai visual yang tersedia.
 
 ### 3. Deposit Analysis
 
-Halaman Deposit Analysis berfokus pada analisis portofolio simpanan nasabah.
-
-Analisis mencakup metrik seperti:
-
-- Bank Deposit
-- Savings Account
-- Checking Accounts
-- Foreign Currency Account
-- Income Band
-- Nationality
-- Engagement Timeframe
-
-Halaman ini digunakan untuk memahami distribusi simpanan berdasarkan kategori nasabah dan jenis rekening yang direpresentasikan dalam dashboard.
+Menyajikan metrik simpanan yang mencakup Bank Deposit, Savings Account, Checking Accounts, dan Foreign Currency Account. Pengguna dapat mengeksplorasi distribusi simpanan berdasarkan kategori nasabah yang tersedia.
 
 ### 4. Summary
 
-Halaman Summary menyajikan ringkasan indikator dan metrik perbankan dalam satu tampilan.
-
-Halaman ini membantu pengguna meninjau KPI yang tersedia secara lebih menyeluruh, termasuk metrik nasabah, keuangan, dan keterlibatan nasabah.
+Menyediakan tampilan ringkasan indikator perbankan untuk membantu pengguna meninjau metrik utama secara menyeluruh.
 
 ### 5. Drill Through
 
-Halaman Drill Through memungkinkan analisis lebih terperinci pada tingkat nasabah berdasarkan konteks atau kategori yang dipilih pada halaman sebelumnya.
-
-Analisis ini dapat membantu pengguna meninjau metrik keuangan, Engagement Length, Investment Advisor, dan informasi nasabah yang tersedia dalam dashboard.
+Mendukung penelusuran lebih terperinci berdasarkan konteks atau kategori yang dipilih dari halaman sebelumnya. Detail yang dapat ditinjau bergantung pada field dan konfigurasi Drill Through dalam model Power BI.
 
 ## Key Business Questions
 
-Pertanyaan berikut dirancang untuk menghubungkan dashboard dengan kebutuhan analisis bisnis. Pertanyaan ini mencakup lima halaman dashboard, mulai dari gambaran umum hingga analisis tingkat nasabah.
+Pertanyaan bisnis berikut mengarahkan analisis yang dilakukan melalui dashboard.
 
 ### 1. Kinerja Nasabah dan Perbankan
 
@@ -249,61 +290,70 @@ Bagaimana Total Fees dan Engagement Length bervariasi berdasarkan Nationality, s
 
 ## Key Insights & Business Implications
 
-Dashboard ini menyediakan kerangka analisis untuk mengeksplorasi kinerja perbankan berdasarkan data nasabah, portofolio pinjaman, simpanan, biaya, dan keterlibatan nasabah.
+Bagian ini menjelaskan pola yang perlu diperiksa pada dashboard dan bagaimana hasilnya dapat diterjemahkan menjadi pertimbangan bisnis. Temuan spesifik harus ditetapkan berdasarkan nilai aktual, bukan diasumsikan sebelum visualisasi diverifikasi.
 
-Melalui segmentasi dan visualisasi interaktif, analisis dapat digunakan untuk:
+| Area Analisis | Insight yang Perlu Dievaluasi | Business Implication |
+|---|---|---|
+| Overall Banking Performance | Tinjau nilai KPI untuk memahami skala nasabah, pinjaman, simpanan, biaya, dan metrik kartu kredit. | Menentukan indikator utama yang perlu dipantau secara berkala. |
+| Loan Portfolio | Identifikasi komponen pinjaman dan Banking Relationship dengan kontribusi terbesar berdasarkan nilai aktual. | Membantu menentukan area portofolio yang memerlukan evaluasi lebih lanjut. |
+| Loan Segmentation | Bandingkan Bank Loan berdasarkan Income Band dan Nationality, dengan mempertimbangkan jumlah nasabah tiap segmen. | Mendukung evaluasi karakteristik segmen dan kesesuaian layanan. |
+| Deposit Portfolio | Evaluasi kontribusi kategori rekening terhadap Total Deposit. | Membantu memahami komposisi simpanan dan menentukan area yang layak ditinjau lebih lanjut. |
+| Deposit Segmentation | Bandingkan Bank Deposit berdasarkan Income Band dan Nationality. | Mendukung analisis distribusi simpanan antarsegmen nasabah. |
+| Customer Engagement | Periksa variasi metrik pinjaman dan simpanan berdasarkan Engagement Timeframe serta Engagement Length. | Membantu mengeksplorasi pola keterlibatan nasabah tanpa menyimpulkan hubungan sebab-akibat. |
+| KPI Monitoring | Evaluasi perubahan KPI berdasarkan filter dan dimensi yang tersedia. | Mendukung pemantauan kinerja berdasarkan konteks analisis yang berbeda. |
+| Customer-Level Analysis | Telusuri detail nasabah dan Investment Advisor melalui Drill Through jika informasi tersebut tersedia. | Membantu memeriksa konteks di balik hasil agregasi dan mengidentifikasi data yang memerlukan peninjauan. |
+| Fees and Loyalty | Tinjau distribusi Total Fees berdasarkan Loyalty Classification. | Mendukung evaluasi pola biaya antarkategori sebelum merumuskan tindakan bisnis. |
+| Nationality and Engagement | Bandingkan Total Fees dan Engagement Length berdasarkan Nationality. | Membantu mengidentifikasi perbedaan yang relevan untuk analisis lanjutan. |
 
-- Mengidentifikasi kategori nasabah dengan kontribusi besar terhadap pinjaman atau simpanan.
-- Membandingkan distribusi metrik keuangan berdasarkan Income Band dan Nationality.
-- Mengeksplorasi hubungan antara Engagement Timeframe dan metrik keuangan.
-- Meninjau distribusi Total Fees berdasarkan Loyalty Classification.
-- Melakukan analisis lanjutan terhadap nasabah melalui Drill Through.
-- Mendukung penyusunan rekomendasi bisnis berdasarkan hasil analisis yang terverifikasi.
-
-**Catatan:** Insight spesifik, seperti segmen dengan nilai tertinggi atau pola dominan, perlu ditentukan berdasarkan hasil aktual pada dashboard. README ini tidak menetapkan angka atau temuan yang belum diverifikasi.
+**Catatan:** Tabel ini merupakan kerangka interpretasi dan implikasi bisnis. Kategori tertinggi, tren dominan, atau hubungan antarmetrik belum dinyatakan sebagai temuan final tanpa verifikasi hasil aktual dashboard. Perbedaan nilai agregat juga tidak otomatis berarti perbedaan rata-rata per nasabah.
 
 ## Business Value
 
-Proyek ini menunjukkan bagaimana data perbankan dapat diolah menjadi informasi yang lebih mudah dipahami melalui Business Intelligence dan Data Visualization.
+Banking Dashboard Analysis mengubah data perbankan menjadi informasi terstruktur melalui KPI, Data Visualization, dan Interactive Reporting. Nilai bisnisnya terletak pada kemampuan dashboard untuk menyediakan dasar analisis yang konsisten, membantu pengguna meninjau kondisi perbankan, dan mengarahkan evaluasi lebih lanjut.
 
-Nilai bisnis yang ingin didukung melalui dashboard meliputi:
+Nilai bisnis yang didukung oleh proyek ini meliputi:
 
-- **Performance Monitoring:** Memantau indikator utama perbankan melalui KPI.
-- **Portfolio Analysis:** Mengeksplorasi distribusi pinjaman dan simpanan.
-- **Customer Segmentation:** Membandingkan karakteristik nasabah berdasarkan kategori yang tersedia.
-- **Customer Engagement Analysis:** Meninjau durasi dan kategori keterlibatan nasabah.
-- **Data-Driven Decision Making:** Menyediakan dasar analisis untuk menyusun rekomendasi bisnis.
-- **Interactive Reporting:** Memungkinkan eksplorasi data dari ringkasan hingga tingkat nasabah.
+- **Performance Monitoring** — Menyediakan gambaran indikator utama untuk membantu pemantauan kinerja perbankan.
+- **Portfolio Analysis** — Mendukung evaluasi komposisi portofolio pinjaman dan simpanan sebagai dasar peninjauan alokasi dan karakteristik portofolio.
+- **Customer Segmentation** — Memungkinkan perbandingan metrik keuangan antarkategori nasabah untuk menemukan perbedaan yang relevan bagi analisis bisnis.
+- **Customer Engagement Analysis** — Membantu mengeksplorasi pola keterlibatan nasabah dan variasinya terhadap metrik keuangan.
+- **Financial Performance Analysis** — Mendukung peninjauan Total Fees dan indikator keuangan lain untuk menentukan area yang membutuhkan pemeriksaan lebih lanjut.
+- **Customer-Level Analysis** — Memungkinkan penelusuran detail melalui Drill Through untuk memvalidasi konteks di balik hasil agregasi.
+- **Data-Driven Decision Making** — Menyediakan landasan analitis bagi penyusunan rekomendasi yang didasarkan pada temuan terverifikasi dan KPI yang dapat dipantau.
+
+Nilai tersebut merupakan manfaat yang dapat didukung oleh kemampuan dashboard. Dampak bisnis aktual, seperti peningkatan pendapatan, retensi nasabah, atau penurunan risiko, memerlukan analisis lanjutan dan evaluasi hasil implementasi.
 
 ## Project Scope & Limitations
 
-Proyek ini berfokus pada analisis deskriptif dan eksploratif menggunakan Microsoft Power BI.
+Proyek ini berfokus pada **descriptive analytics** dan eksplorasi data menggunakan Microsoft Power BI. Cakupannya meliputi Data Preparation, Data Modeling, DAX Calculations, KPI Reporting, dan Data Visualization.
 
-Cakupan proyek meliputi Data Cleaning, Data Transformation, Data Modeling, DAX Calculations, Data Visualization, dan analisis metrik perbankan berdasarkan kategori yang tersedia.
+Batasan yang perlu diperhatikan:
 
-Beberapa batasan yang perlu diperhatikan:
-
-- Hasil analisis bergantung pada kualitas, cakupan, dan definisi data yang digunakan.
-- Interpretasi KPI harus mengikuti definisi metrik yang diterapkan dalam dashboard.
-- Hubungan atau perbedaan yang terlihat dalam visualisasi tidak secara otomatis menunjukkan hubungan sebab-akibat.
-- Proyek ini tidak menetapkan model predictive analytics atau machine learning sebagai bagian dari implementasi yang telah diselesaikan.
-- Rekomendasi bisnis perlu didasarkan pada hasil aktual, bukan asumsi yang belum diuji.
+- Hasil analisis bergantung pada kualitas, cakupan, dan definisi data.
+- Interpretasi KPI harus mengikuti formula yang diterapkan pada model.
+- Perbedaan nilai agregat tidak selalu menunjukkan perbedaan rata-rata pada tingkat nasabah.
+- Pola pada visualisasi tidak secara otomatis membuktikan hubungan sebab-akibat.
+- Klaim mengenai segmen tertinggi atau terendah perlu diperiksa pada dashboard aktual.
+- Proyek ini tidak menunjukkan implementasi model Machine Learning atau sistem prediksi persetujuan pinjaman.
+- Analisis risiko kredit memerlukan indikator, metodologi, dan validasi tambahan yang tidak dapat diasumsikan tersedia dalam dashboard saat ini.
 
 ## Future Improvements
 
-Pengembangan lebih lanjut dapat mencakup:
+Pengembangan lebih lanjut yang dapat dipertimbangkan:
 
-1. **Advanced Customer Segmentation** untuk mengidentifikasi kelompok nasabah berdasarkan karakteristik keuangan dan keterlibatan.
-2. **Trend Analysis** untuk mengevaluasi perubahan KPI dari waktu ke waktu jika data historis tersedia.
-3. **Customer Retention Analysis** untuk mengeksplorasi pola keterlibatan dan loyalitas nasabah.
-4. **Advanced DAX Optimization** untuk meningkatkan efisiensi perhitungan dan pemeliharaan dashboard.
-5. **Automated Data Refresh** untuk memperbarui data secara terjadwal jika sumber data dan infrastruktur mendukung.
-6. **Predictive Analytics** untuk mengembangkan analisis prediktif apabila tersedia data, metodologi, dan validasi yang sesuai.
-7. **Actionable Business Recommendations** berdasarkan temuan yang telah diverifikasi dan dikaitkan dengan kebutuhan bisnis.
+1. **Data Dictionary** — Mendokumentasikan definisi tabel, kolom, relasi, dan metrik.
+2. **Data Quality Validation** — Memeriksa missing values, duplikasi Client ID, konsistensi kategori, dan rentang tanggal.
+3. **DAX Optimization** — Meninjau efisiensi formula dan konsistensi definisi KPI.
+4. **Trend Analysis** — Mengevaluasi perubahan indikator dari waktu ke waktu jika data historis tersedia.
+5. **Customer Retention Analysis** — Mengembangkan analisis retensi apabila data yang diperlukan tersedia.
+6. **Advanced Risk Analysis** — Menambahkan indikator risiko kredit jika field dan metodologi yang sesuai tersedia.
+7. **Predictive Analytics** — Mengembangkan model prediktif sebagai proyek lanjutan dengan data, evaluasi, dan validasi yang memadai.
+8. **Automated Data Refresh** — Menyiapkan pembaruan data terjadwal apabila sumber data dan infrastruktur mendukung.
+9. **Actionable Recommendations** — Menghubungkan temuan terverifikasi dengan tindakan bisnis dan KPI untuk mengevaluasi hasilnya.
 
 ## Project Structure
 
-Struktur proyek dapat disusun sebagai berikut, sesuai dengan file yang benar-benar tersedia:
+Contoh struktur repository berikut dapat disesuaikan dengan file yang benar-benar disertakan:
 
 ```text
 Banking-Dashboard/
@@ -314,16 +364,14 @@ Banking-Dashboard/
 └── ppt banking domain.pdf
 ```
 
-Nama file pada contoh di atas dapat disesuaikan dengan nama file aktual. Struktur ini merupakan ilustrasi organisasi proyek, bukan pernyataan bahwa seluruh file tersebut selalu disertakan dalam repository.
+Nama file pada contoh di atas merupakan placeholder dan perlu disesuaikan dengan nama file aktual.
 
 ## Conclusion
 
-Proyek Banking Dashboard Analysis menunjukkan penerapan Microsoft Power BI untuk mengolah, menganalisis, dan memvisualisasikan data perbankan melalui KPI, DAX Measures, Data Modeling, dan Interactive Dashboard.
+Banking Dashboard Analysis menunjukkan penerapan Microsoft Power BI untuk mengolah, memodelkan, dan memvisualisasikan data perbankan melalui DAX Measures, KPI Reporting, dan Interactive Dashboard.
 
-Dengan lima halaman utama—Home, Loan Analysis, Deposit Analysis, Summary, dan Drill Through—dashboard mendukung eksplorasi kinerja perbankan dari tingkat ringkasan hingga tingkat nasabah.
-
-Proyek ini menjadi contoh penerapan keterampilan Data Analyst dalam menerjemahkan data menjadi informasi yang dapat digunakan untuk analisis bisnis dan penyusunan rekomendasi berbasis data.
+Lima halaman—Home, Loan Analysis, Deposit Analysis, Summary, dan Drill Through—mendukung eksplorasi dari gambaran umum kinerja hingga penelusuran data nasabah. Melalui Key Business Questions dan evaluasi temuan, proyek ini menyediakan dasar untuk memahami portofolio, membandingkan segmen nasabah, serta menyusun rekomendasi berbasis data yang telah diverifikasi.
 
 ## Keywords
 
-`Data Analyst` · `Microsoft Power BI` · `Power Query` · `DAX` · `Data Cleaning` · `Data Transformation` · `Data Modeling` · `Data Visualization` · `Business Intelligence` · `Exploratory Data Analysis` · `KPI` · `Customer Segmentation` · `Portfolio Analysis` · `Banking Analytics` · `Business Insights` · `Data-Driven Decision Making`
+`Data Analyst` · `Microsoft Power BI` · `Power Query` · `DAX` · `Data Cleaning` · `Data Transformation` · `Data Modeling` · `Data Visualization` · `Business Intelligence` · `Exploratory Data Analysis` · `KPI` · `Customer Segmentation` · `Portfolio Analysis` · `Banking Analytics` · `Business Insights` · `Business Implications` · `Data-Driven Decision Making`
