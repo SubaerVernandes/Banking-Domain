@@ -10,7 +10,6 @@
 
 ![Summary Dashboard](All_Dashboard/Drill_Through.png)
 
-# Banking Dashboard Analysis — Power BI
 
 ## Project Overview
 
